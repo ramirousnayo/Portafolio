@@ -1,0 +1,318 @@
+/* =========================
+   1. RESET Y BASE
+========================= */
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #333;
+    background-color: #f4f6f8;
+    line-height: 1.6;
+}
+
+/* =========================
+   2. LAYOUT GENERAL
+========================= */
+
+main {
+    padding-top: 30px;
+}
+
+section {
+    max-width: 1100px;
+    margin: 0 auto 60px;
+    padding: 0 20px;
+}
+
+/* =========================
+   3. TIPOGRAFÍA
+========================= */
+
+h1 {
+    font-size: 32px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 26px;
+    margin-bottom: 25px;
+    color: #111827;
+    border-left: 5px solid #2563eb;
+    padding-left: 12px;
+}
+
+h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+/* =========================
+   4. HEADER Y NAV
+========================= */
+
+header {
+    background: linear-gradient(135deg, #1e293b, #0f172a);
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+}
+
+header h1 {
+    margin: 0;
+    padding: 10px 0;
+}
+
+nav {
+    background-color: rgba(255, 255, 255, 0.08);
+    padding: 12px 0;
+}
+
+nav a {
+    color: #e5e7eb;
+    text-decoration: none;
+    margin: 0 18px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+
+/* =========================
+   5. PROYECTOS (LAYOUT)
+========================= */
+
+.contenedor-proyectos {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* =========================
+   6. PROYECTOS (CARDS)
+========================= */
+
+.proyecto {
+    background-color: white;
+    padding: 22px;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    max-width: 320px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.proyecto:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* =========================
+   7. IMÁGENES
+========================= */
+
+.proyecto img {
+    width: 100%;
+    border-radius: 14px;
+    margin-bottom: 15px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.proyecto:hover img {
+    transform: scale(1.03);
+}
+
+/* =========================
+   8. BOTONES
+========================= */
+
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #2563eb;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #1d4ed8;
+    transform: scale(1.05);
+}
+
+/* =========================
+   9. HABILIDADES
+========================= */
+
+#habilidades ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding-left: 0;
+    list-style: none;
+}
+
+#habilidades li {
+    background-color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    color: #2563eb;
+}
+
+/* =========================
+   10. CONTACTO
+========================= */
+
+.form-contacto {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-contacto input,
+.form-contacto textarea {
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #d1d5db;
+    font-size: 14px;
+    font-family: inherit;
+}
+
+.form-contacto input:focus,
+.form-contacto textarea:focus {
+    outline: none;
+    border-color: #3b82f6;
+}
+
+/* =========================
+   CONTACTO DIRECTO
+========================= */
+
+.contacto-directo {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.contacto-directo p {
+    margin: 6px 0;
+    font-size: 14px;
+}
+
+.contacto-directo i {
+    margin-right: 6px;
+    color: #2563eb;
+}
+
+.contacto-directo a {
+    color: #333;
+    text-decoration: none;
+}
+
+.contacto-directo a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   FOOTER ELEGANTE
+========================= */
+
+footer {
+    background: linear-gradient(135deg, #0f172a, #020617);
+    color: #9ca3af;
+    text-align: center;
+    padding: 18px 0;
+    font-size: 13px;
+}
+
+/* =========================
+   REDES SOCIALES
+========================= */
+
+.redes {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    margin-top: 8px;
+}
+
+.redes a {
+    width: 40px;                 /* 🔵 BOTÓN CIRCULAR */
+    height: 40px;                /* 🔵 BOTÓN CIRCULAR */
+    display: flex;
+    align-items: center;         /* CENTRADO VERTICAL */
+    justify-content: center;     /* CENTRADO HORIZONTAL */
+    border-radius: 50%;          /* 🔵 CÍRCULO */
+    color: #9ca3af;
+    font-size: 18px;
+    transition:                  /* ✨ ANIMACIÓN SUAVE */
+        background-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.redes a:hover {
+    background-color: rgba(37, 99, 235, 0.15);
+    color: #2563eb;
+    transform: translateY(-3px) scale(1.1);
+}
+
+/* =========================
+   12. RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+        font-size: 15px;
+    }
+
+    .contenedor-proyectos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .proyecto {
+        max-width: 90%;
+    }
+
+    #habilidades ul {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+
+    section {
+        margin-bottom: 40px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .proyecto {
+        padding: 18px;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+}
